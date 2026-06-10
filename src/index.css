@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 60 7% 95%;
+    --foreground: 0 0% 16%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 16%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 16%;
+    --primary: 207 31% 41%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 207 23% 53%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 60 7% 95%;
+    --muted-foreground: 207 23% 53%;
+    --accent: 99 30% 56%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 7 76% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 99 30% 56%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 16%;
+    --sidebar-primary: 99 30% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 99 30% 56%;
+    --sidebar-accent-foreground: 0 0% 16%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 99 30% 56%;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+
+  * {
+    @apply border-border;
+  }
+}
+
+@layer components {
+  .font-mono-data {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
